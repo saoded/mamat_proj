@@ -1,0 +1,24 @@
+Add_Student 115 Natan
+Add_Student 214 Avi
+
+Add_EE_Course 115 100 Malam 0 0
+Set_Exam_Grade 115 100 90
+Add_EE_Course 115 103 Mitug 1 0
+Set_HW_Grade 115 103 0 97
+Set_Exam_Grade 115 103 83
+Add_CS_Course 115 200 Combinatorics 1 0.3 1 Graph_Algorithms
+Set_HW_Grade 115 200 0 86
+Set_Exam_Grade 115 200 97
+
+Print_All
+
+Add_EE_Course 214 100 Malam 0 0
+Set_Exam_Grade 214 100 85
+Add_EE_Course 214 105 Sadot 2 0.2
+Set_HW_Grade 214 105 0 86
+Set_HW_Grade 214 105 1 93
+Set_Exam_Grade 214 105 76
+
+Set_Factor 105 7
+Print_All
+

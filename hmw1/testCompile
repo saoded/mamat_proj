@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#############################################################
+# function name	: 	testCompile								#
+# description	: 	checks for compilation errors/warnings	#
+# parameters	: 	$1 = logFile							#
+#					$2 = source/program name (without ".c")	#
+# return value	: 	0 - successfully compiled				#
+#					1 - compilation errors/warnings			#
+#############################################################
+
+# STEP 1: Compile
+# gcc -fno-diagnostics-show-caret -Wall -o "$2" "$2".c >"$1" 2>&1
+gcc -Wall -o "$2" "$2".c >"$1" 2>&1
+# Check for errors
+if [ $? -ne 0 ]; then 
+    echo "Compile X"
+    exit 1
+fi
+# STEP 2: Check for warning
+cat $1 | grep "warning:" >/dev/null
+if [ $? -eq 0 ]; then
+    echo "Compile X"
+    exit 1
+fi
+# STEP 3: PROFIT
+echo "Compile V"
+exit 0

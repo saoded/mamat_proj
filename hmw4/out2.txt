@@ -1,0 +1,40 @@
+Student Name: Natan
+Student ID: 115
+Average Grade: 89
+
+EE Courses:
+100 Malam: 90
+103 Mitug: 83
+
+CS Courses:
+200 Combinatorics: 94
+
+Student Name: Avi
+Student ID: 214
+Average Grade: 0
+
+EE Courses:
+
+CS Courses:
+
+Student Name: Natan
+Student ID: 115
+Average Grade: 89
+
+EE Courses:
+100 Malam: 90
+103 Mitug: 83
+
+CS Courses:
+200 Combinatorics: 94
+
+Student Name: Avi
+Student ID: 214
+Average Grade: 86
+
+EE Courses:
+100 Malam: 85
+105 Sadot: 86
+
+CS Courses:
+

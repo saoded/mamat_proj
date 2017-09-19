@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#########################################################################
+# function name	: 	testInOut											#
+# description	: 	checks diffences between desired and actual outputs	#
+# parameters	: 	$1 = logFile										#
+#					$2 = program name									#
+#					$3 = input file										#
+#					$4 = desired output file							#
+# return value	: 	0 - output file is just as desired					#
+#					1 - outputs are different, or an error occured		#
+#########################################################################
+
+./$2 <$3 >$1 2>&1
+# diff $1 $4 >$1 2>&1
+diff $1 $4 >/dev/null
+
+if [ $? -ne 0 ]
+then
+	echo "InOut X"
+	exit 1
+else
+	echo "InOut V"
+	exit 0
+fi

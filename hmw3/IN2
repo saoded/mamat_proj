@@ -1,0 +1,23 @@
+Add_Person 32165488 Charlie 55
+Add_Person 98752144 Dani 12
+Add_Person 12582118 Eli 60
+Add_Person 12233223 Franck 55
+
+Start_Cluster 4
+
+Add_Point 4 0 0 0 0
+Add_Point 4 1 0 1 10
+Add_Point 4 0 -3 2 0
+Add_Point 4 1 1 1 1 10
+Add_Point 4 5 2 2 11
+Add_Point 4 1 0 0 11
+
+Print
+
+Add_Point 4 5 2 2 9
+Remove_Person All
+ 
+Print
+
+
+

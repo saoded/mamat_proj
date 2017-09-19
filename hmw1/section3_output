@@ -1,0 +1,13 @@
+1
+55511
+2
+/dev/zero
+inout/echo.in
+inout/memleaks.11.in
+inout/memleaks.6.in
+3
+2
+4
+logs/6.inout.log
+5
+logs/6.inout.log

@@ -1,0 +1,26 @@
+Add Coordinate Failed.
+Name: Charlie, ID: 32165488, Age: 55
+Name: Dani, ID: 98752144, Age: 12
+Name: Eli, ID: 12582118, Age: 60
+Name: Franck, ID: 12233223, Age: 55
+
+Cluster's dimension: 4
+Point Dimension: 4, Size: 4, Coordinates: 0 0 0 0 
+Point Dimension: 4, Size: 4, Coordinates: 1 0 1 10 
+Point Dimension: 4, Size: 4, Coordinates: 0 -3 2 0 
+Point Dimension: 4, Size: 4, Coordinates: 1 1 1 1 
+Point Dimension: 4, Size: 4, Coordinates: 5 2 2 11 
+Point Dimension: 4, Size: 4, Coordinates: 1 0 0 11 
+
+Minimum Square Distance: 2
+
+Cluster's dimension: 4
+Point Dimension: 4, Size: 4, Coordinates: 0 0 0 0 
+Point Dimension: 4, Size: 4, Coordinates: 1 0 1 10 
+Point Dimension: 4, Size: 4, Coordinates: 0 -3 2 0 
+Point Dimension: 4, Size: 4, Coordinates: 1 1 1 1 
+Point Dimension: 4, Size: 4, Coordinates: 5 2 2 11 
+Point Dimension: 4, Size: 4, Coordinates: 1 0 0 11 
+Point Dimension: 4, Size: 4, Coordinates: 5 2 2 9 
+
+Minimum Square Distance: 2

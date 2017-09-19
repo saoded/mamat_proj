@@ -1,0 +1,25 @@
+1: hello world
+Compile V
+InOut V
+Memory V
+2: hello world with warnings
+Compile X
+InOut V
+Memory V
+3: echo test
+Compile V
+InOut V
+Memory V
+4: echo failtest
+Compile V
+InOut X
+Memory V
+5: memleaks pass
+Compile V
+InOut V
+Memory V
+6: memleaks fail
+Compile V
+InOut V
+Memory X
+Passed 15 of 18 tests

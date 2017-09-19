@@ -1,0 +1,32 @@
+Add_Student 128 Moshe
+Add_Student 325 Gidon
+
+Add_EE_Course 128 100 Malam 1 0.15
+Set_HW_Grade 128 100 0 88
+Set_Exam_Grade 128 100 90
+Add_EE_Course 128 103 Mitug 2 0.2
+Set_HW_Grade 128 103 1 91
+Set_HW_Grade 128 103 0 97
+Set_Exam_Grade 128 103 86
+Add_CS_Course 128 200 Combinatorics 2 0.2 0 Graph_Algorithms
+Set_HW_Grade 128 200 0 86
+Set_HW_Grade 128 200 1 95
+Set_Exam_Grade 128 200 97
+
+Add_EE_Course 325 100 Malam 1 0.15
+Set_HW_Grade 325 100 0 90
+Set_Exam_Grade 325 100 78
+Add_EE_Course 325 105 Sadot 2 0.15
+Set_HW_Grade 325 105 0 95
+Set_HW_Grade 325 105 1 97
+Set_Exam_Grade 325 105 67
+Add_CS_Course 325 200 Combinatorics 2 0.2 0 Graph_Algorithms
+Set_HW_Grade 325 200 0 100
+Set_HW_Grade 325 200 1 93
+Set_Exam_Grade 325 200 82
+
+Print_Student 128
+Set_Factor 100 3
+Set_Factor 105 7
+Print_All
+

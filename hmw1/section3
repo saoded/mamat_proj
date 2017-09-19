@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo 1
+cut -d= -f3 logs/1.memory.log | head -1
+
+echo 2
+cut -d@ -f3 tests.lst | sort | uniq | sed '/^$/d'
+
+echo 3
+find logs/*.inout.log -type f -print | xargs grep "hello" | wc -l
+
+echo 4
+ls -t logs/*.inout.log | head -1
+#stat -c "%y %n" logs/*.inout.log | sort | tail -1 | cut -d' ' -f4
+
+echo 5
+ls ./logs/*inout.log | sort -r | head -n 1 | cut -f3 -d"/"

@@ -1,0 +1,33 @@
+Student Name: Moshe
+Student ID: 128
+Average Grade: 92
+
+EE Courses:
+100 Malam: 90
+103 Mitug: 88
+
+CS Courses:
+200 Combinatorics: 97
+
+Student Name: Moshe
+Student ID: 128
+Average Grade: 93
+
+EE Courses:
+100 Malam: 93
+103 Mitug: 88
+
+CS Courses:
+200 Combinatorics: 97
+
+Student Name: Gidon
+Student ID: 325
+Average Grade: 82
+
+EE Courses:
+100 Malam: 83
+105 Sadot: 78
+
+CS Courses:
+200 Combinatorics: 85
+

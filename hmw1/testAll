@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#############################################################
+# function name	: 	testAll									#
+# description	: 	runs automatic checks					#
+# parameters	: 	$1 = testListFile						#
+# return value	: 	0 - successfully checked				#
+#					1 - compilation/output/memory errors	#
+#############################################################
+
+# STEP 1: Check for a folder named "logs"
+if [ -d "logs" ]; then # if present, print error and exit
+	echo "a 'logs' directory already exists. No tests will run"
+	exit 1
+fi
+mkdir logs # otherwise, create a "logs" directory
+
+iLine=1
+nChecks=0
+nSuccess=0
+while read line; do
+	if [ -z "$line" ]; then
+		continue
+	fi
+
+	IFS='@' read -r -a arrLine <<< "$line"
+	echo "$iLine: ${arrLine[0]}"
+
+	"./testCompile" logs/$iLine.compile.log ${arrLine[1]}
+	compileRes=$?
+	(( ++nChecks ))
+	if [ -f ${arrLine[1]} ]; then
+		"./testInOut" logs/$iLine.inout.log ${arrLine[1]} ${arrLine[2]} ${arrLine[3]}
+		inoutRes=$?
+		"./testMem" logs/$iLine.memory.log ${arrLine[1]} ${arrLine[2]}
+		memRes=$?
+		(( nChecks+=2 ))
+	fi
+
+	(( nSuccess+=3-compileRes-inoutRes-memRes ))
+
+	(( ++iLine ))
+done <$1
+
+echo "Passed $nSuccess of $nChecks tests"
+exit 0
